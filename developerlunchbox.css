@@ -208,3 +208,116 @@ H3{
     }
 }
 
+/*Task Manager*/
+#taskManagerContainer{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+    pointer-events: none;
+    margin-top: 50px; /* ensures its below everything */
+    /*text-align: center;*/
+}
+#taskManagerContainer.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    margin-top: 1300px;
+    margin-left: 80px;
+}
+#taskManager{
+    text-align: center;
+    color: hsl(16, 86%, 56%);
+    margin-top: 20px;
+}
+#user-task{
+    min-width: 400px;
+    min-height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 4px;
+}
+#add{
+    padding: 8px;
+    width: 80px;
+    background-color: hsl(180, 70%, 54%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#filter{
+    padding: 8px;
+    width: 80px;
+    background-color: hsl(180, 2%, 58%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#showTable{
+    padding: 8px;
+    width: 80px;
+    background-color: hsl(16, 86%, 56%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+#taskDisplay{
+    padding: 5px;
+    min-width: 400px;
+    border: none;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+#taskDiv{
+    border: none;
+    border-radius: 5px;
+    width: 600px;
+    min-height: 200px;
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: 2px 2px 2px black;
+}
+
+p{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+#pdescription{
+    height: 200px;
+    width: 500px; 
+}
+
+.tablerow{
+    margin-top: 20px;
+    border: 1px black solid;
+    align-items: center;
+    color: hsl(53, 70%, 49%);
+    background-color: hsl(0, 0%, 100%);
+    
+}
+td{
+   border: 2px solid hsl(0, 8%, 85%);
+   padding: 5px;
+   box-shadow: 2px 2px hsl(0, 7%, 78%);
+}
+
+#table1{
+    min-width: 475px;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    
+}
+
+.bin{
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.checkbox{
+    cursor: pointer;
+    
+}
